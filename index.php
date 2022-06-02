@@ -17,7 +17,8 @@
         //Aqui incluimos el menu
         echo $_SERVER["DOCUMENT_ROOT"]."/sistema_remesas_dairy/modelos/personas_modelo.php<br/>";
         echo $_SERVER["DOCUMENT_ROOT"]."/remesas-dairy/vistas/menu.php<br/>";
-        echo getcwd();
+        echo getcwd(). "<br/>";
+        echo __FILE__;
         include_once($_SERVER["DOCUMENT_ROOT"]."/remesas-dairy/vistas/menu.php");
         
         //include_once("")
