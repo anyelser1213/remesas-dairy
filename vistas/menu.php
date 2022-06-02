@@ -3,7 +3,7 @@
           
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="<?php echo $_GET["ruta_fija"] ?>/index.php">CambiosRDI <?php echo $_GET["ruta_fija"] ?></a>
+            <a class="navbar-brand" href="<?php echo $_GET["ruta_fija"] ?>/index.php">CambiosRDI </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,7 +25,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarLgDropdown">
                       <li><a class="dropdown-item" href="<?php echo $_GET["ruta_fija"] ?>/vistas/remesas.php">Remesas</a></li>
-                      <li><a class="dropdown-item" href="/sistema_remesas_dairy/vistas/comision.php">Herramientas/Comision</a></li>
+                      <li><a class="dropdown-item" href="<?php echo $_GET["ruta_fija"] ?>/vistas/comision.php">Herramientas/Comision</a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>

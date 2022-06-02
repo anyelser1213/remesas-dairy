@@ -30,8 +30,8 @@
 
           $_GET["ruta_fija"] = "/sistema_remesas_dairy";
 
-          printf("Es diferente a /app y el entorno es: ");
-          echo $_GET["ruta_fija"]; 
+          //printf("Es diferente a /app y el entorno es: ");
+          //echo $_GET["ruta_fija"]; 
           include_once($_SERVER["DOCUMENT_ROOT"]."/sistema_remesas_dairy/vistas/menu.php");
           
         }else{
@@ -39,9 +39,8 @@
           
           $_GET["ruta_fija"] = "";
 
-          printf("Eees igual a /app y el entorno es: ",$_GET["entorno"]);
-
-          echo $_GET["ruta_fija"]; 
+          //printf("Eees igual a /app y el entorno es: ",$_GET["entorno"]);
+          //echo $_GET["ruta_fija"]; 
           include_once($_SERVER["DOCUMENT_ROOT"]."/vistas/menu.php");
           
         }
