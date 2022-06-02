@@ -25,13 +25,18 @@
         //echo "<br/><br/>archivo: ". __FILE__;
         //echo "<br/><br/>nombre directorio: ".basename(dirname(__FILE__))."<br>";
         
+        
         if($_SERVER["DOCUMENT_ROOT"] != "/app"){
 
           printf("Es diferente a /app");
-          include_once($_SERVER["DOCUMENT_ROOT"]."/remesas-dairy/vistas/menu.php");
+          $_GET["entorno"] = "/sistema_remesas_dairy";
+          include_once($_SERVER["DOCUMENT_ROOT"]."/sistema_remesas_dairy/vistas/menu.php");
+          
         }else{
           printf("Es igual a /app");
+          $_GET["entorno"] = "";
           include_once($_SERVER["DOCUMENT_ROOT"]."/vistas/menu.php");
+          
         }
         
         

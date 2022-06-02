@@ -3,7 +3,7 @@
           
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="/sistema_remesas_dairy/index.php">CambiosRDI</a>
+            <a class="navbar-brand" href="/sistema_remesas_dairy/index.php">CambiosRDI <?php echo $_GET["entorno"] ?></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,7 +24,7 @@
                       Servicios
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarLgDropdown">
-                      <li><a class="dropdown-item" href="/sistema_remesas_dairy/vistas/remesas.php">Remesas</a></li>
+                      <li><a class="dropdown-item" href="<?php echo $_GET["entorno"] ?>/sistema_remesas_dairy/vistas/remesas.php">Remesas</a></li>
                       <li><a class="dropdown-item" href="/sistema_remesas_dairy/vistas/comision.php">Herramientas/Comision</a></li>
                       <li>
                         <hr class="dropdown-divider">
