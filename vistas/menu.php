@@ -1,10 +1,4 @@
 
-<?php
-        echo getcwd(). "<br/>";
-        echo "archivo de menu: ". __FILE__;
-        
-        
-        ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
           
 
