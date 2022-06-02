@@ -25,8 +25,15 @@
         echo "<br/><br/>archivo: ". __FILE__;
         echo "<br/><br/>nombre directorio: ".basename(dirname(__FILE__))."<br>";
         
+        if($_SERVER["DOCUMENT_ROOT"] != "/app"){
 
-        include_once($_SERVER["DOCUMENT_ROOT"]."/remesas-dairy/vistas/menu.php");
+          printf("Es diferente a /app");
+          include_once($_SERVER["DOCUMENT_ROOT"]."/remesas-dairy/vistas/menu.php");
+        }else{
+          printf("Es igual a /app");
+          include_once($_SERVER["DOCUMENT_ROOT"]."/vistas/menu.php");
+        }
+        
         
         //include_once("")
         
