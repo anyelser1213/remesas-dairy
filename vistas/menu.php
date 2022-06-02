@@ -3,7 +3,7 @@
           
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="/sistema_remesas_dairy/index.php">CambiosRDI <?php echo $_GET["ruta_fija"] ?></a>
+            <a class="navbar-brand" href="<?php echo $_GET["ruta_fija"] ?>/index.php">CambiosRDI <?php echo $_GET["ruta_fija"] ?></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -16,7 +16,7 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/sistema_remesas_dairy/index.php">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="<?php echo $_GET["ruta_fija"] ?>/index.php">Inicio</a>
                   </li>
                   
                   <li class="nav-item dropdown">
@@ -29,11 +29,11 @@
                       <li>
                         <hr class="dropdown-divider">
                       </li>
-                      <li><a class="dropdown-item" href="/sistema_remesas_dairy/vistas/personas_view.php">pruebas</a></li>
+                      <li><a class="dropdown-item" href="<?php echo $_GET["ruta_fija"] ?>/vistas/personas_view.php">pruebas</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/sistema_remesas_dairy/index.php">Iniciar Sesión</a>
+                    <a class="nav-link" aria-current="page" href="<?php echo $_GET["ruta_fija"] ?>/index.php">Iniciar Sesión</a>
                   </li>
                 </ul>
               

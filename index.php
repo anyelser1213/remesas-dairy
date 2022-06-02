@@ -28,8 +28,6 @@
         
         if($_SERVER["DOCUMENT_ROOT"] != "/app"){
 
-          
-          
           $_GET["ruta_fija"] = "/sistema_remesas_dairy";
 
           printf("Es diferente a /app y el entorno es: ");
