@@ -16,9 +16,16 @@
         <?php
         //Aqui incluimos el menu
         echo $_SERVER["DOCUMENT_ROOT"]."/sistema_remesas_dairy/modelos/personas_modelo.php<br/>";
-        echo $_SERVER["DOCUMENT_ROOT"]."/remesas-dairy/vistas/menu.php<br/>";
+        echo $_SERVER["DOCUMENT_ROOT"]."/vistas/menu.php<br/>";
         echo getcwd(). "<br/>";
-        echo __FILE__;
+
+        //if()
+        echo "<br/><br/>directorio: ". __DIR__;
+        echo "<br/><br/>dirname: ". dirname(__FILE__);
+        echo "<br/><br/>archivo: ". __FILE__;
+        echo "<br/><br/>nombre directorio: ".basename(dirname(__FILE__))."<br>";
+        
+
         include_once($_SERVER["DOCUMENT_ROOT"]."/remesas-dairy/vistas/menu.php");
         
         //include_once("")
