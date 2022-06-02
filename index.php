@@ -28,13 +28,22 @@
         
         if($_SERVER["DOCUMENT_ROOT"] != "/app"){
 
-          printf("Es diferente a /app");
+          
+          
           $_GET["entorno"] = "/sistema_remesas_dairy";
+
+          printf("Es diferente a /app y el entorno es: ",$_GET["entorno"]);
+          echo $_GET["entorno"]; 
           include_once($_SERVER["DOCUMENT_ROOT"]."/sistema_remesas_dairy/vistas/menu.php");
           
         }else{
-          printf("Es igual a /app");
-          $_GET["entorno"] = "";
+
+          
+          $_GET["entorno"] = "s";
+
+          printf("Eees igual a /app y el entorno es: ",$_GET["entorno"]);
+
+          echo $_GET["entorno"]; 
           include_once($_SERVER["DOCUMENT_ROOT"]."/vistas/menu.php");
           
         }
