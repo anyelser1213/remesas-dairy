@@ -14,47 +14,31 @@
       
         
         <?php
-        //Aqui incluimos el menu
-        //echo $_SERVER["DOCUMENT_ROOT"]."/sistema_remesas_dairy/modelos/personas_modelo.php<br/>";
-        //echo $_SERVER["DOCUMENT_ROOT"]."/vistas/menu.php<br/>";
-        //echo getcwd(). "<br/>";
-
-        //if()
-        //echo "<br/><br/>directorio: ". __DIR__;
-        //echo "<br/><br/>dirname: ". dirname(__FILE__);
-        //echo "<br/><br/>archivo: ". __FILE__;
-        //echo "<br/><br/>nombre directorio: ".basename(dirname(__FILE__))."<br>";
         
-        
-        if($_SERVER["DOCUMENT_ROOT"] != "/app"){
+          if($_SERVER["DOCUMENT_ROOT"] != "/app"){
 
-          $_GET["ruta_fija"] = "/sistema_remesas_dairy";
-
-          //printf("Es diferente a /app y el entorno es: ");
-          //echo $_GET["ruta_fija"]; 
-          include_once($_SERVER["DOCUMENT_ROOT"]."/sistema_remesas_dairy/vistas/menu.php");
+            include_once($_SERVER["DOCUMENT_ROOT"]."/sistema_remesas_dairy/configuraciones.php");
+            include_once($_SERVER["DOCUMENT_ROOT"]."/sistema_remesas_dairy/vistas/menu.php");
           
-        }else{
+          }else{
 
+            include_once($_SERVER["DOCUMENT_ROOT"]."/configuraciones.php");
+            include_once($_SERVER["DOCUMENT_ROOT"]."/vistas/menu.php");
+            
+          }
           
-          $_GET["ruta_fija"] = "";
-
-          //printf("Eees igual a /app y el entorno es: ",$_GET["entorno"]);
-          //echo $_GET["ruta_fija"]; 
-          include_once($_SERVER["DOCUMENT_ROOT"]."/vistas/menu.php");
           
-        }
-        
-        
-        //include_once("")
-        
-        //Incluir base de datos
         ?>
 
       
         <div class="container my-5">
           <div class="bg-light p-5 rounded">
             <div class="col-sm-8 py-5 mx-auto">
+              <h1>
+               <?php
+            
+                ?>
+              </h1>
               <h1 class="display-5 fw-normal">Enviar dinero a Venezuela nunca fue tan facil</h1>
               <p class="fs-5">Cuente con el servicio de envío de dinero de CambiosRDI cuando necesite enviar dinero rápido a Venezuela </p>
               

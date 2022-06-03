@@ -19,7 +19,6 @@
 
 ?>
     <div class="container">
-
             
         <h1>Comisiones Banesco</h1>
 
@@ -42,12 +41,6 @@
         <label for="Monto">Comision del monto</label>
         <input type="number" placeholder="Comision del monto" id="Monto_Comision">
         <br><br>
-        <label for="Monto">Comision con 2 decimales</label>
-        <input type="number" placeholder="Comision con 2 decimales" id="Monto_Comision_2decimales">
-        <br><br>
-        <label for="Monto">Comision con precision</label>
-        <input type="number" placeholder="Comision con precision" id="Monto_Comision_Precision">
-
         </div>
 
 
