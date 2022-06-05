@@ -30,6 +30,7 @@ Boton_Calcular.addEventListener("click",function(){
         console.log("Plan Elegido:",planElegido);
     }
 
+    //1era opcion: transferencia y 2da opcion: pago movil
     var Comision = planElegido == 1 ? 0.12 : 0.3;
 
     //Asignamos valores a sus campos
@@ -51,9 +52,23 @@ Boton_Calcular.addEventListener("click",function(){
     //console.log("Comision com expresion decimal: ",(Monto.value*(Comision/100).math(exprRegular)));
 
 
+    if(Monto.value < 20 ){
+        console.log("El monto es inferior a 20");
+        //1era opcion: transferencia y 2da opcion: pago movil
+    Monto_Comision.value = 0.05;
+    
+    }else{
+        
+        console.log("El monto es superior a 20");
+        //1era opcion: transferencia y 2da opcion: pago movil
+        Monto_Comision.value = planElegido == 1 ? (Monto.value*(Comision/100)).toString().match(exprRegular) : (Monto.value*(Comision/100)).toFixed(2);
+    
 
-    //Monto_Comision.value = parseFloat(numb2);
-    Monto_Comision.value = (Monto.value*(Comision/100)).toString().match(exprRegular);
+    }
+
+
+
+    //Monto_Comision.value = (Monto.value*(Comision/100)).toString().match(exprRegular);
 
 
     

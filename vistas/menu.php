@@ -40,7 +40,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarLgDropdown">
                       <li><a class="dropdown-item" href="<?php echo $GLOBALS["ruta_fija"] ?>/vistas/remesas.php">Remesas</a></li>
-                      <li><a class="dropdown-item" href="<?php echo $_SESSION["ruta_fija"] ?>/vistas/comision.php">Herramientas/Comision</a></li>
+                      <li><a class="dropdown-item" href="<?php echo $GLOBALS["ruta_fija"] ?>/vistas/comision.php">Herramientas/Comision</a></li>
                       <li>
                         <hr class="dropdown-divider">
                       </li>
